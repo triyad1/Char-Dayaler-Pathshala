@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>পেমেন্ট</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h2>পেমেন্ট অপশন</h2>
+  <button onclick="showPayment('bkash')">বিকাশ</button>
+  <button onclick="showPayment('nagad')">নগদ</button>
+  <button onclick="showPayment('rocket')">রকেট</button>
+  <button onclick="showPayment('upay')">উপায়</button>
+
+  <div id="paymentInfo"></div>
+  <button onclick="copyNumber('01315867383')">নাম্বার কপি করুন</button>
+
+  <form>
+    <label>ট্রানজেকশন আইডি:</label><br>
+    <input type="text" required><br>
+    <label>যে নাম্বার থেকে পাঠিয়েছেন:</label><br>
+    <input type="text" required><br>
+    <button type="submit">সাবমিট</button>
+  </form>
+</body>
+</html>
