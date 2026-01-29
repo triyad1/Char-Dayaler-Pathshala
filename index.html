@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>চার দেয়ালের পাঠশালা</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- হেডার -->
+  <header>
+    <h1>চার দেয়ালের পাঠশালা</h1>
+    <p>Website create by Tahsinullah Riyad DV</p>
+  </header>
+
+  <!-- মেনুবার -->
+  <nav>
+    <a href="#home">হোম</a>
+    <a href="#login">লগইন</a>
+    <a href="#register">রেজিস্ট্রেশন</a>
+    <a href="#courses">কোর্স</a>
+    <a href="#payment">পেমেন্ট</a>
+    <a href="#teachers">শিক্ষক</a>
+    <a href="#services">সার্ভিস</a>
+    <a href="#faq">FAQ</a>
+    <a href="#blog">ব্লগ</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
+
+  <!-- স্ক্রলিং আপডেট -->
+  <marquee behavior="scroll" direction="left" style="background:#ff9800; color:white; padding:10px;">
+    🎉 নতুন কোর্স যুক্ত হয়েছে! | পেমেন্ট বিকাশে করুন: 01315867383 | ডেমো ক্লাসে যোগ দিতে WhatsApp এ মেসেজ করুন!
+  </marquee>
+
+  <!-- হোম -->
+  <section id="home">
+    <h2>স্বাগতম!</h2>
+    <p>আমাদের কোচিং সেন্টার এখন অনলাইনে। এখানে পাবেন কোর্স, শিক্ষক তথ্য, পেমেন্ট সাপোর্ট এবং আরও অনেক কিছু।</p>
+  </section>
+
+  <!-- লগইন -->
+  <section id="login">
+    <h2>লগইন</h2>
+    <form>
+      <label>ইমেইল:</label>
+      <input type="email" required>
+      <label>পাসওয়ার্ড:</label>
+      <input type="password" required>
+      <button type="submit">লগইন</button>
+    </form>
+  </section>
+
+  <!-- রেজিস্ট্রেশন -->
+  <section id="register">
+    <h2>রেজিস্ট্রেশন</h2>
+    <form>
+      <label>নাম:</label>
+      <input type="text" required>
+      <label>ইমেইল:</label>
+      <input type="email" required>
+      <label>পাসওয়ার্ড:</label>
+      <input type="password" required>
+      <button type="submit">রেজিস্টার</button>
+    </form>
+  </section>
+
+  <!-- কোর্স -->
+  <section id="courses">
+    <h2>কোর্স লিস্ট</h2>
+    <div class="course-card">
+      <h3>IELTS কোর্স</h3>
+      <p>সুবিধা: স্পোকেন + রাইটিং + রিডিং</p>
+      <button onclick="addToCart('IELTS কোর্স')">কার্টে যোগ করুন</button>
+    </div>
+    <div class="course-card">
+      <h3>Spoken English</h3>
+      <p>সুবিধা: দৈনিক ক্লাস + প্র্যাকটিস</p>
+      <button onclick="addToCart('Spoken English')">কার্টে যোগ করুন</button>
+    </div>
+  </section>
+
+  <!-- পেমেন্ট -->
+  <section id="payment">
+    <h2>পেমেন্ট অপশন</h2>
+    <button onclick="showPayment('bkash')">বিকাশ</button>
+    <button onclick="showPayment('nagad')">নগদ</button>
+    <button onclick="showPayment('rocket')">রকেট</button>
+    <button onclick="showPayment('upay')">উপায়</button>
+
+    <div id="paymentInfo"></div>
+    <button onclick="copyNumber('01315867383')">নাম্বার কপি করুন</button>
+
+    <form>
+      <label>ট্রানজেকশন আইডি:</label>
+      <input type="text" required>
+      <label>যে নাম্বার থেকে পাঠিয়েছেন:</label>
+      <input type="text" required>
+      <button type="submit">সাবমিট</button>
+    </form>
+  </section>
+
+  <!-- শিক্ষক -->
+  <section id="teachers">
+    <h2>শিক্ষক তথ্য</h2>
+    <p>ডিরেক্টর: MD NASIM TALUKDER</p>
+    <p>শিক্ষক: Md Nasim Talukder, Other</p>
+    <p>শিক্ষার্থীর সংখ্যা: ২০০+</p>
+  </section>
+
+  <!-- সার্ভিস -->
+  <section id="services">
+    <h2>আমাদের সার্ভিস</h2>
+    <ul>
+      <li>অনলাইন কোর্স</li>
+      <li>ডেমো ক্লাস</li>
+      <li>লাইভ সাপোর্ট</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>FAQ</h2>
+    <p>প্রশ্ন: কিভাবে পেমেন্ট করবো?</p>
+    <p>উত্তর: বিকাশে Send Money করুন 01315867383 নাম্বারে।</p>
+  </section>
+
+  <!-- ব্লগ -->
+  <section id="blog">
+    <h2>ব্লগ ও আপডেট</h2>
+    <div class="blog-post">
+      <h3>🎉 নতুন কোর্স যুক্ত হয়েছে!</h3>
+      <p>আমাদের Spoken English কোর্সে এখন আরও বেশি প্র্যাকটিস সেশন যুক্ত হয়েছে।</p>
+    </div>
+  </section>
+
+  <!-- যোগাযোগ -->
+  <section id="contact">
+    <h2>যোগাযোগ</h2>
+    <p>WhatsApp হেল্পলাইন: <a href="https://wa.me/01315867383">01315867383</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=61584914871770">আমাদের পেজ</a></p>
+    <iframe src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/profile.php?id=61584914871770" width="100%" height="300"></iframe>
+  </section>
+
+  <!-- ফুটার -->
+  <footer>
+    <p>Copyright © চার দেয়ালের পাঠশালা</p>
+  </footer>
+
+</body>
+</html>
